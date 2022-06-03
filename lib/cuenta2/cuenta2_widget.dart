@@ -144,10 +144,7 @@ class _Cuenta2WidgetState extends State<Cuenta2Widget> {
                   ),
                   subtitle: Text(
                     'Uriel Ernesto Sanchez Ramos',
-                    style: FlutterFlowTheme.of(context).subtitle2.override(
-                          fontFamily: 'Work Sans',
-                          color: FlutterFlowTheme.of(context).black600,
-                        ),
+                    style: FlutterFlowTheme.of(context).subtitle2.override(fontFamily: 'Work Sans', color: Color(0xFF000000)),
                   ),
                   tileColor: Color(0xFFF5F5F5),
                   dense: false,
@@ -165,10 +162,7 @@ class _Cuenta2WidgetState extends State<Cuenta2Widget> {
                   ),
                   subtitle: Text(
                     'VIP',
-                    style: FlutterFlowTheme.of(context).subtitle2.override(
-                          fontFamily: 'Work Sans',
-                          color: FlutterFlowTheme.of(context).black600,
-                        ),
+                    style: FlutterFlowTheme.of(context).subtitle2.override(fontFamily: 'Work Sans', color: Color(0xFF000000)),
                   ),
                   tileColor: Color(0xFFF5F5F5),
                   dense: false,
@@ -188,7 +182,7 @@ class _Cuenta2WidgetState extends State<Cuenta2Widget> {
                     'urielsanchez5@gmail.com',
                     style: FlutterFlowTheme.of(context).subtitle2.override(
                           fontFamily: 'Work Sans',
-                          color: FlutterFlowTheme.of(context).black600,
+                          color: Color(0xFF000000),
                         ),
                   ),
                   tileColor: Color(0xFFF5F5F5),
@@ -209,7 +203,7 @@ class _Cuenta2WidgetState extends State<Cuenta2Widget> {
                     '************',
                     style: FlutterFlowTheme.of(context).subtitle2.override(
                           fontFamily: 'Work Sans',
-                          color: FlutterFlowTheme.of(context).black600,
+                          color: Color(0xFF000000),
                         ),
                   ),
                   tileColor: Color(0xFFF5F5F5),
@@ -230,7 +224,7 @@ class _Cuenta2WidgetState extends State<Cuenta2Widget> {
                     'Tildio #1109',
                     style: FlutterFlowTheme.of(context).subtitle2.override(
                           fontFamily: 'Work Sans',
-                          color: FlutterFlowTheme.of(context).black600,
+                          color: Color(0xFF000000),
                         ),
                   ),
                   tileColor: Color(0xFFF5F5F5),

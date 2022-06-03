@@ -144,10 +144,7 @@ class _CuentadesWidgetState extends State<CuentadesWidget> {
                   ),
                   subtitle: Text(
                     'Leslie Yamileth Gaytan Herrera',
-                    style: FlutterFlowTheme.of(context).subtitle2.override(
-                          fontFamily: 'Work Sans',
-                          color: FlutterFlowTheme.of(context).black600,
-                        ),
+                    style: FlutterFlowTheme.of(context).subtitle2.override(fontFamily: 'Work Sans', color: Color(0xFF000000)),
                   ),
                   tileColor: Color(0xFFF5F5F5),
                   dense: false,
@@ -165,10 +162,7 @@ class _CuentadesWidgetState extends State<CuentadesWidget> {
                   ),
                   subtitle: Text(
                     '6J-A',
-                    style: FlutterFlowTheme.of(context).subtitle2.override(
-                          fontFamily: 'Work Sans',
-                          color: FlutterFlowTheme.of(context).black600,
-                        ),
+                    style: FlutterFlowTheme.of(context).subtitle2.override(fontFamily: 'Work Sans', color: Color(0xFF000000)),
                   ),
                   tileColor: Color(0xFFF5F5F5),
                   dense: false,
@@ -186,10 +180,7 @@ class _CuentadesWidgetState extends State<CuentadesWidget> {
                   ),
                   subtitle: Text(
                     'Programacion',
-                    style: FlutterFlowTheme.of(context).subtitle2.override(
-                          fontFamily: 'Work Sans',
-                          color: FlutterFlowTheme.of(context).black600,
-                        ),
+                    style: FlutterFlowTheme.of(context).subtitle2.override(fontFamily: 'Work Sans', color: Color(0xFF000000)),
                   ),
                   tileColor: Color(0xFFF5F5F5),
                   dense: false,
