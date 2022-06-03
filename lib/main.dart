@@ -21,8 +21,7 @@ class MyApp extends StatefulWidget {
   @override
   State<MyApp> createState() => _MyAppState();
 
-  static _MyAppState of(BuildContext context) =>
-      context.findAncestorStateOfType<_MyAppState>();
+  static _MyAppState of(BuildContext context) => context.findAncestorStateOfType<_MyAppState>();
 }
 
 class _MyAppState extends State<MyApp> {
@@ -38,6 +37,7 @@ class _MyAppState extends State<MyApp> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'PRUEBA128',
       localizationsDelegates: [
         FFLocalizationsDelegate(),
@@ -46,7 +46,9 @@ class _MyAppState extends State<MyApp> {
         GlobalCupertinoLocalizations.delegate,
       ],
       locale: _locale,
-      supportedLocales: const [Locale('en', '')],
+      supportedLocales: const [
+        Locale('en', '')
+      ],
       theme: ThemeData(brightness: Brightness.light),
       darkTheme: ThemeData(brightness: Brightness.dark),
       themeMode: _themeMode,
@@ -107,18 +109,14 @@ class _NavBarPageState extends State<NavBarPage> {
               children: [
                 Icon(
                   Icons.home_outlined,
-                  color: currentIndex == 0
-                      ? FlutterFlowTheme.of(context).secondaryColor
-                      : FlutterFlowTheme.of(context).primaryColor,
+                  color: currentIndex == 0 ? FlutterFlowTheme.of(context).secondaryColor : FlutterFlowTheme.of(context).primaryColor,
                   size: 24,
                 ),
                 Text(
                   'Inicio',
                   overflow: TextOverflow.ellipsis,
                   style: TextStyle(
-                    color: currentIndex == 0
-                        ? FlutterFlowTheme.of(context).secondaryColor
-                        : FlutterFlowTheme.of(context).primaryColor,
+                    color: currentIndex == 0 ? FlutterFlowTheme.of(context).secondaryColor : FlutterFlowTheme.of(context).primaryColor,
                     fontSize: 11.0,
                   ),
                 ),
@@ -131,18 +129,14 @@ class _NavBarPageState extends State<NavBarPage> {
               children: [
                 Icon(
                   Icons.local_pizza,
-                  color: currentIndex == 1
-                      ? FlutterFlowTheme.of(context).secondaryColor
-                      : FlutterFlowTheme.of(context).primaryColor,
+                  color: currentIndex == 1 ? FlutterFlowTheme.of(context).secondaryColor : FlutterFlowTheme.of(context).primaryColor,
                   size: 24,
                 ),
                 Text(
                   'Pizzas',
                   overflow: TextOverflow.ellipsis,
                   style: TextStyle(
-                    color: currentIndex == 1
-                        ? FlutterFlowTheme.of(context).secondaryColor
-                        : FlutterFlowTheme.of(context).primaryColor,
+                    color: currentIndex == 1 ? FlutterFlowTheme.of(context).secondaryColor : FlutterFlowTheme.of(context).primaryColor,
                     fontSize: 11.0,
                   ),
                 ),
@@ -155,18 +149,14 @@ class _NavBarPageState extends State<NavBarPage> {
               children: [
                 Icon(
                   Icons.people_alt,
-                  color: currentIndex == 2
-                      ? FlutterFlowTheme.of(context).secondaryColor
-                      : FlutterFlowTheme.of(context).primaryColor,
+                  color: currentIndex == 2 ? FlutterFlowTheme.of(context).secondaryColor : FlutterFlowTheme.of(context).primaryColor,
                   size: 24,
                 ),
                 Text(
                   'Cliente',
                   overflow: TextOverflow.ellipsis,
                   style: TextStyle(
-                    color: currentIndex == 2
-                        ? FlutterFlowTheme.of(context).secondaryColor
-                        : FlutterFlowTheme.of(context).primaryColor,
+                    color: currentIndex == 2 ? FlutterFlowTheme.of(context).secondaryColor : FlutterFlowTheme.of(context).primaryColor,
                     fontSize: 11.0,
                   ),
                 ),
@@ -179,18 +169,14 @@ class _NavBarPageState extends State<NavBarPage> {
               children: [
                 Icon(
                   Icons.work,
-                  color: currentIndex == 3
-                      ? FlutterFlowTheme.of(context).secondaryColor
-                      : FlutterFlowTheme.of(context).primaryColor,
+                  color: currentIndex == 3 ? FlutterFlowTheme.of(context).secondaryColor : FlutterFlowTheme.of(context).primaryColor,
                   size: 24,
                 ),
                 Text(
                   'Empleado',
                   overflow: TextOverflow.ellipsis,
                   style: TextStyle(
-                    color: currentIndex == 3
-                        ? FlutterFlowTheme.of(context).secondaryColor
-                        : FlutterFlowTheme.of(context).primaryColor,
+                    color: currentIndex == 3 ? FlutterFlowTheme.of(context).secondaryColor : FlutterFlowTheme.of(context).primaryColor,
                     fontSize: 11.0,
                   ),
                 ),
@@ -203,18 +189,14 @@ class _NavBarPageState extends State<NavBarPage> {
               children: [
                 Icon(
                   Icons.contacts,
-                  color: currentIndex == 4
-                      ? FlutterFlowTheme.of(context).secondaryColor
-                      : FlutterFlowTheme.of(context).primaryColor,
+                  color: currentIndex == 4 ? FlutterFlowTheme.of(context).secondaryColor : FlutterFlowTheme.of(context).primaryColor,
                   size: 24,
                 ),
                 Text(
                   'Contacto',
                   overflow: TextOverflow.ellipsis,
                   style: TextStyle(
-                    color: currentIndex == 4
-                        ? FlutterFlowTheme.of(context).secondaryColor
-                        : FlutterFlowTheme.of(context).primaryColor,
+                    color: currentIndex == 4 ? FlutterFlowTheme.of(context).secondaryColor : FlutterFlowTheme.of(context).primaryColor,
                     fontSize: 11.0,
                   ),
                 ),
