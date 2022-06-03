@@ -1,99 +1,228 @@
+import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_localizations/flutter_localizations.dart';
+import 'flutter_flow/flutter_flow_theme.dart';
+import 'flutter_flow/flutter_flow_util.dart';
+import 'flutter_flow/internationalization.dart';
+import 'package:google_fonts/google_fonts.dart';
+import 'package:floating_bottom_navigation_bar/floating_bottom_navigation_bar.dart';
+import 'index.dart';
 
-void main() => runApp(MyApp());
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
 
-class MyApp extends StatelessWidget {
+  await FlutterFlowTheme.initialize();
+
+  runApp(MyApp());
+}
+
+class MyApp extends StatefulWidget {
   // This widget is the root of your application.
+  @override
+  State<MyApp> createState() => _MyAppState();
+
+  static _MyAppState of(BuildContext context) =>
+      context.findAncestorStateOfType<_MyAppState>();
+}
+
+class _MyAppState extends State<MyApp> {
+  Locale _locale;
+  ThemeMode _themeMode = FlutterFlowTheme.themeMode;
+
+  void setLocale(Locale value) => setState(() => _locale = value);
+  void setThemeMode(ThemeMode mode) => setState(() {
+        _themeMode = mode;
+        FlutterFlowTheme.saveThemeMode(mode);
+      });
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      // Application name
-      title: 'Flutter Stateful Clicker Counter',
-      theme: ThemeData(
-        // Application theme data, you can set the colors for the application as
-        // you want
-        primarySwatch: Colors.blue,
-      ),
-      home: MyHomePage(title: 'Flutter Demo Clicker Counter Home Page'),
+      title: 'PRUEBA128',
+      localizationsDelegates: [
+        FFLocalizationsDelegate(),
+        GlobalMaterialLocalizations.delegate,
+        GlobalWidgetsLocalizations.delegate,
+        GlobalCupertinoLocalizations.delegate,
+      ],
+      locale: _locale,
+      supportedLocales: const [Locale('en', '')],
+      theme: ThemeData(brightness: Brightness.light),
+      darkTheme: ThemeData(brightness: Brightness.dark),
+      themeMode: _themeMode,
+      home: NavBarPage(),
     );
   }
 }
 
-class MyHomePage extends StatefulWidget {
-  final String title;
-  const MyHomePage({Key? key, required this.title}) : super(key: key);
+class NavBarPage extends StatefulWidget {
+  NavBarPage({Key key, this.initialPage}) : super(key: key);
 
-  // This widget is the home page of your application. It is stateful, meaning
-  // that it has a State object (defined below) that contains fields that affect
-  // how it looks.
-
-  // This class is the configuration for the state. It holds the values (in this
-  // case the title) provided by the parent (in this case the App widget) and
-  // used by the build method of the State. Fields in a Widget subclass are
-  // always marked "final".
+  final String initialPage;
 
   @override
-  _MyHomePageState createState() => _MyHomePageState();
+  _NavBarPageState createState() => _NavBarPageState();
 }
 
-class _MyHomePageState extends State<MyHomePage> {
-  int _counter = 0;
+/// This is the private State class that goes with NavBarPage.
+class _NavBarPageState extends State<NavBarPage> {
+  String _currentPage = 'main';
 
-  void _incrementCounter() {
-    setState(() {
-      // This call to setState tells the Flutter framework that something has
-      // changed in this State, which causes it to rerun the build method below
-      // so that the display can reflect the updated values. If we changed
-      // _counter without calling setState(), then the build method would not be
-      // called again, and so nothing would appear to happen.
-      _counter++;
-    });
+  @override
+  void initState() {
+    super.initState();
+    _currentPage = widget.initialPage ?? _currentPage;
   }
 
   @override
   Widget build(BuildContext context) {
-    // This method is rerun every time setState is called, for instance as done
-    // by the _incrementCounter method above.
-    //
-    // The Flutter framework has been optimized to make rerunning build methods
-    // fast, so that you can just rebuild anything that needs updating rather
-    // than having to individually change instances of widgets.
+    final tabs = {
+      'main': MainWidget(),
+      'Pizzas': PizzasWidget(),
+      'Clientes': ClientesWidget(),
+      'empleados': EmpleadosWidget(),
+      'Contacto': ContactoWidget(),
+    };
+    final currentIndex = tabs.keys.toList().indexOf(_currentPage);
     return Scaffold(
-      appBar: AppBar(
-        // Here we take the value from the MyHomePage object that was created by
-        // the App.build method, and use it to set our appbar title.
-        title: Text(widget.title),
-      ),
-      body: Center(
-        // Center is a layout widget. It takes a single child and positions it
-        // in the middle of the parent.
-        child: Column(
-          // Column is also a layout widget. It takes a list of children and
-          // arranges them vertically. By default, it sizes itself to fit its
-          // children horizontally, and tries to be as tall as its parent.
-          //
-          // Column has various properties to control how it sizes itself and
-          // how it positions its children. Here we use mainAxisAlignment to
-          // center the children vertically; the main axis here is the vertical
-          // axis because Columns are vertical (the cross axis would be
-          // horizontal).
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: <Widget>[
-            Text(
-              'You have pushed the button this many times:',
+      body: tabs[_currentPage],
+      extendBody: true,
+      bottomNavigationBar: FloatingNavbar(
+        currentIndex: currentIndex,
+        onTap: (i) => setState(() => _currentPage = tabs.keys.toList()[i]),
+        backgroundColor: Colors.white,
+        selectedItemColor: FlutterFlowTheme.of(context).secondaryColor,
+        unselectedItemColor: FlutterFlowTheme.of(context).primaryColor,
+        selectedBackgroundColor: Color(0x00000000),
+        borderRadius: 8,
+        itemBorderRadius: 8,
+        margin: EdgeInsetsDirectional.fromSTEB(0, 0, 0, 0),
+        padding: EdgeInsetsDirectional.fromSTEB(0, 0, 0, 0),
+        width: double.infinity,
+        elevation: 0,
+        items: [
+          FloatingNavbarItem(
+            customWidget: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Icon(
+                  Icons.home_outlined,
+                  color: currentIndex == 0
+                      ? FlutterFlowTheme.of(context).secondaryColor
+                      : FlutterFlowTheme.of(context).primaryColor,
+                  size: 24,
+                ),
+                Text(
+                  'Inicio',
+                  overflow: TextOverflow.ellipsis,
+                  style: TextStyle(
+                    color: currentIndex == 0
+                        ? FlutterFlowTheme.of(context).secondaryColor
+                        : FlutterFlowTheme.of(context).primaryColor,
+                    fontSize: 11.0,
+                  ),
+                ),
+              ],
             ),
-            Text(
-              '$_counter',
-              style: TextStyle(fontSize: 25),
+          ),
+          FloatingNavbarItem(
+            customWidget: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Icon(
+                  Icons.local_pizza,
+                  color: currentIndex == 1
+                      ? FlutterFlowTheme.of(context).secondaryColor
+                      : FlutterFlowTheme.of(context).primaryColor,
+                  size: 24,
+                ),
+                Text(
+                  'Pizzas',
+                  overflow: TextOverflow.ellipsis,
+                  style: TextStyle(
+                    color: currentIndex == 1
+                        ? FlutterFlowTheme.of(context).secondaryColor
+                        : FlutterFlowTheme.of(context).primaryColor,
+                    fontSize: 11.0,
+                  ),
+                ),
+              ],
             ),
-          ],
-        ),
+          ),
+          FloatingNavbarItem(
+            customWidget: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Icon(
+                  Icons.people_alt,
+                  color: currentIndex == 2
+                      ? FlutterFlowTheme.of(context).secondaryColor
+                      : FlutterFlowTheme.of(context).primaryColor,
+                  size: 24,
+                ),
+                Text(
+                  'Cliente',
+                  overflow: TextOverflow.ellipsis,
+                  style: TextStyle(
+                    color: currentIndex == 2
+                        ? FlutterFlowTheme.of(context).secondaryColor
+                        : FlutterFlowTheme.of(context).primaryColor,
+                    fontSize: 11.0,
+                  ),
+                ),
+              ],
+            ),
+          ),
+          FloatingNavbarItem(
+            customWidget: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Icon(
+                  Icons.work,
+                  color: currentIndex == 3
+                      ? FlutterFlowTheme.of(context).secondaryColor
+                      : FlutterFlowTheme.of(context).primaryColor,
+                  size: 24,
+                ),
+                Text(
+                  'Empleado',
+                  overflow: TextOverflow.ellipsis,
+                  style: TextStyle(
+                    color: currentIndex == 3
+                        ? FlutterFlowTheme.of(context).secondaryColor
+                        : FlutterFlowTheme.of(context).primaryColor,
+                    fontSize: 11.0,
+                  ),
+                ),
+              ],
+            ),
+          ),
+          FloatingNavbarItem(
+            customWidget: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Icon(
+                  Icons.contacts,
+                  color: currentIndex == 4
+                      ? FlutterFlowTheme.of(context).secondaryColor
+                      : FlutterFlowTheme.of(context).primaryColor,
+                  size: 24,
+                ),
+                Text(
+                  'Contacto',
+                  overflow: TextOverflow.ellipsis,
+                  style: TextStyle(
+                    color: currentIndex == 4
+                        ? FlutterFlowTheme.of(context).secondaryColor
+                        : FlutterFlowTheme.of(context).primaryColor,
+                    fontSize: 11.0,
+                  ),
+                ),
+              ],
+            ),
+          )
+        ],
       ),
-      floatingActionButton: FloatingActionButton(
-        onPressed: _incrementCounter,
-        tooltip: 'Increment',
-        child: Icon(Icons.add),
-      ), // This trailing comma makes auto-formatting nicer for build methods.
     );
   }
 }
