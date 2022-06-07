@@ -6,6 +6,7 @@ import '../flutter_flow/flutter_flow_widgets.dart';
 import '../isesion/isesion_widget.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:leslie/conclusiones/conclusiones_widget.dart';
 
 class CuentadesWidget extends StatefulWidget {
   const CuentadesWidget({Key key}) : super(key: key);
@@ -144,7 +145,10 @@ class _CuentadesWidgetState extends State<CuentadesWidget> {
                   ),
                   subtitle: Text(
                     'Leslie Yamileth Gaytan Herrera',
-                    style: FlutterFlowTheme.of(context).subtitle2.override(fontFamily: 'Work Sans', color: Color(0xFF000000)),
+                    style: FlutterFlowTheme.of(context).subtitle2.override(
+                          fontFamily: 'Work Sans',
+                          color: Color(0xFF000000),
+                        ),
                   ),
                   tileColor: Color(0xFFF5F5F5),
                   dense: false,
@@ -162,7 +166,10 @@ class _CuentadesWidgetState extends State<CuentadesWidget> {
                   ),
                   subtitle: Text(
                     '6J-A',
-                    style: FlutterFlowTheme.of(context).subtitle2.override(fontFamily: 'Work Sans', color: Color(0xFF000000)),
+                    style: FlutterFlowTheme.of(context).subtitle2.override(
+                          fontFamily: 'Work Sans',
+                          color: Color(0xFF000000),
+                        ),
                   ),
                   tileColor: Color(0xFFF5F5F5),
                   dense: false,
@@ -180,33 +187,72 @@ class _CuentadesWidgetState extends State<CuentadesWidget> {
                   ),
                   subtitle: Text(
                     'Programacion',
-                    style: FlutterFlowTheme.of(context).subtitle2.override(fontFamily: 'Work Sans', color: Color(0xFF000000)),
+                    style: FlutterFlowTheme.of(context).subtitle2.override(
+                          fontFamily: 'Work Sans',
+                          color: Color(0xFF000000),
+                        ),
                   ),
                   tileColor: Color(0xFFF5F5F5),
                   dense: false,
                 ),
               ),
               Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(10, 250, 10, 0),
-                child: FFButtonWidget(
-                  onPressed: () async {
-                    Navigator.pop(context);
-                  },
-                  text: 'REGRESAR',
-                  options: FFButtonOptions(
-                    width: double.infinity,
-                    height: 40,
-                    color: Color(0xFFE41937),
-                    textStyle: FlutterFlowTheme.of(context).subtitle2.override(
-                          fontFamily: 'Work Sans',
-                          color: Colors.white,
+                padding: EdgeInsetsDirectional.fromSTEB(0, 150, 0, 0),
+                child: Row(
+                  mainAxisSize: MainAxisSize.max,
+                  children: [
+                    Padding(
+                      padding: EdgeInsetsDirectional.fromSTEB(10, 0, 10, 0),
+                      child: FFButtonWidget(
+                        onPressed: () async {
+                          Navigator.pop(context);
+                        },
+                        text: 'REGRESAR',
+                        options: FFButtonOptions(
+                          width: 170,
+                          height: 40,
+                          color: Color(0xFFE41937),
+                          textStyle: FlutterFlowTheme.of(context).subtitle2.override(
+                                fontFamily: 'Work Sans',
+                                color: Colors.white,
+                              ),
+                          borderSide: BorderSide(
+                            color: Colors.transparent,
+                            width: 1,
+                          ),
+                          borderRadius: 3,
                         ),
-                    borderSide: BorderSide(
-                      color: Colors.transparent,
-                      width: 1,
+                      ),
                     ),
-                    borderRadius: 3,
-                  ),
+                    FFButtonWidget(
+                      onPressed: () async {
+                        await Navigator.push(
+                          context,
+                          PageTransition(
+                            type: PageTransitionType.bottomToTop,
+                            duration: Duration(milliseconds: 300),
+                            reverseDuration: Duration(milliseconds: 300),
+                            child: ConclusionesWidget(),
+                          ),
+                        );
+                      },
+                      text: 'CONCLUSIONES',
+                      options: FFButtonOptions(
+                        width: 170,
+                        height: 40,
+                        color: Color(0xFF006391),
+                        textStyle: FlutterFlowTheme.of(context).subtitle2.override(
+                              fontFamily: 'Work Sans',
+                              color: Colors.white,
+                            ),
+                        borderSide: BorderSide(
+                          color: Colors.transparent,
+                          width: 1,
+                        ),
+                        borderRadius: 3,
+                      ),
+                    ),
+                  ],
                 ),
               ),
             ],
