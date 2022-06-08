@@ -143,8 +143,8 @@ class _PizzasWidgetState extends State<PizzasWidget> {
                                 ),
                               );
                             },
-                            child: Image.network(
-                              'https://github.com/LeslieGaytan/Poyecto-Ulll-Imagenes/blob/main/4Q.png?raw=true',
+                            child: Image.asset(
+                              'assets/images/4Q.png',
                               width: 170,
                               height: 100,
                               fit: BoxFit.cover,
@@ -154,9 +154,7 @@ class _PizzasWidgetState extends State<PizzasWidget> {
                             padding: EdgeInsetsDirectional.fromSTEB(0, 5, 0, 0),
                             child: Text(
                               'CUATRO QUESOS',
-                              style: FlutterFlowTheme.of(context)
-                                  .bodyText1
-                                  .override(
+                              style: FlutterFlowTheme.of(context).bodyText1.override(
                                     fontFamily: 'Work Sans',
                                     color: Color(0xFF006491),
                                     fontSize: 15,
@@ -164,14 +162,11 @@ class _PizzasWidgetState extends State<PizzasWidget> {
                             ),
                           ),
                           Padding(
-                            padding:
-                                EdgeInsetsDirectional.fromSTEB(0, 0, 0, 15),
+                            padding: EdgeInsetsDirectional.fromSTEB(0, 0, 0, 15),
                             child: Text(
                               'La pizza pensada en los amantes del queso. Queso mozzarella, queso crema, queso cheddar, queso parmesano.',
                               textAlign: TextAlign.start,
-                              style: FlutterFlowTheme.of(context)
-                                  .bodyText2
-                                  .override(
+                              style: FlutterFlowTheme.of(context).bodyText2.override(
                                     fontFamily: 'Work Sans',
                                     color: Color(0xFF737373),
                                     fontSize: 11,
@@ -202,8 +197,8 @@ class _PizzasWidgetState extends State<PizzasWidget> {
                                 ),
                               );
                             },
-                            child: Image.network(
-                              'https://github.com/LeslieGaytan/Poyecto-Ulll-Imagenes/blob/main/CF.png?raw=true',
+                            child: Image.asset(
+                              'assets/images/CF.png',
                               width: 170,
                               height: 100,
                               fit: BoxFit.cover,
@@ -213,9 +208,7 @@ class _PizzasWidgetState extends State<PizzasWidget> {
                             padding: EdgeInsetsDirectional.fromSTEB(0, 5, 0, 0),
                             child: Text(
                               'CARNES FRÍAS',
-                              style: FlutterFlowTheme.of(context)
-                                  .bodyText1
-                                  .override(
+                              style: FlutterFlowTheme.of(context).bodyText1.override(
                                     fontFamily: 'Work Sans',
                                     color: Color(0xFF006491),
                                     fontSize: 15,
@@ -223,13 +216,10 @@ class _PizzasWidgetState extends State<PizzasWidget> {
                             ),
                           ),
                           Padding(
-                            padding:
-                                EdgeInsetsDirectional.fromSTEB(2, 0, 0, 15),
+                            padding: EdgeInsetsDirectional.fromSTEB(2, 0, 0, 15),
                             child: Text(
                               'La pizza para los amantes de la carne. Salami, pepperoni, jamón, finas hierbas.',
-                              style: FlutterFlowTheme.of(context)
-                                  .bodyText2
-                                  .override(
+                              style: FlutterFlowTheme.of(context).bodyText2.override(
                                     fontFamily: 'Work Sans',
                                     color: Color(0xFF737373),
                                     fontSize: 11,
@@ -269,8 +259,8 @@ class _PizzasWidgetState extends State<PizzasWidget> {
                                 ),
                               );
                             },
-                            child: Image.network(
-                              'https://github.com/LeslieGaytan/Poyecto-Ulll-Imagenes/blob/main/DLX.png?raw=true',
+                            child: Image.asset(
+                              'assets/images/DLX.png',
                               width: 170,
                               height: 100,
                               fit: BoxFit.cover,
@@ -280,9 +270,7 @@ class _PizzasWidgetState extends State<PizzasWidget> {
                             padding: EdgeInsetsDirectional.fromSTEB(0, 5, 0, 0),
                             child: Text(
                               'DELUXE',
-                              style: FlutterFlowTheme.of(context)
-                                  .bodyText1
-                                  .override(
+                              style: FlutterFlowTheme.of(context).bodyText1.override(
                                     fontFamily: 'Work Sans',
                                     color: Color(0xFF006491),
                                     fontSize: 15,
@@ -290,13 +278,10 @@ class _PizzasWidgetState extends State<PizzasWidget> {
                             ),
                           ),
                           Padding(
-                            padding:
-                                EdgeInsetsDirectional.fromSTEB(0, 0, 3, 15),
+                            padding: EdgeInsetsDirectional.fromSTEB(0, 0, 3, 15),
                             child: Text(
                               'Disfrutar esta pizza es todo un lujo. Pepperoni, carne molida, champiñones, pimiento, cebolla.',
-                              style: FlutterFlowTheme.of(context)
-                                  .bodyText2
-                                  .override(
+                              style: FlutterFlowTheme.of(context).bodyText2.override(
                                     fontFamily: 'Work Sans',
                                     color: Color(0xFF737373),
                                     fontSize: 11,
@@ -327,8 +312,8 @@ class _PizzasWidgetState extends State<PizzasWidget> {
                                 ),
                               );
                             },
-                            child: Image.network(
-                              'https://github.com/LeslieGaytan/Poyecto-Ulll-Imagenes/blob/main/HNC.png?raw=true',
+                            child: Image.asset(
+                              'assets/images/HNC.png',
                               width: 170,
                               height: 100,
                               fit: BoxFit.cover,
@@ -338,9 +323,7 @@ class _PizzasWidgetState extends State<PizzasWidget> {
                             padding: EdgeInsetsDirectional.fromSTEB(0, 5, 0, 0),
                             child: Text(
                               'HAWAIANA',
-                              style: FlutterFlowTheme.of(context)
-                                  .bodyText1
-                                  .override(
+                              style: FlutterFlowTheme.of(context).bodyText1.override(
                                     fontFamily: 'Work Sans',
                                     color: Color(0xFF006491),
                                     fontSize: 15,
@@ -348,13 +331,10 @@ class _PizzasWidgetState extends State<PizzasWidget> {
                             ),
                           ),
                           Padding(
-                            padding:
-                                EdgeInsetsDirectional.fromSTEB(0, 0, 0, 15),
+                            padding: EdgeInsetsDirectional.fromSTEB(0, 0, 0, 15),
                             child: Text(
                               'La pizza que unos cuestionan pero todos aman. Jamón, piña.',
-                              style: FlutterFlowTheme.of(context)
-                                  .bodyText2
-                                  .override(
+                              style: FlutterFlowTheme.of(context).bodyText2.override(
                                     fontFamily: 'Work Sans',
                                     color: Color(0xFF737373),
                                     fontSize: 11,
@@ -394,8 +374,8 @@ class _PizzasWidgetState extends State<PizzasWidget> {
                                 ),
                               );
                             },
-                            child: Image.network(
-                              'https://github.com/LeslieGaytan/Poyecto-Ulll-Imagenes/blob/main/MEX.png?raw=true',
+                            child: Image.asset(
+                              'assets/images/MEX.png',
                               width: 170,
                               height: 100,
                               fit: BoxFit.cover,
@@ -405,9 +385,7 @@ class _PizzasWidgetState extends State<PizzasWidget> {
                             padding: EdgeInsetsDirectional.fromSTEB(0, 5, 0, 0),
                             child: Text(
                               'MEXICANA',
-                              style: FlutterFlowTheme.of(context)
-                                  .bodyText1
-                                  .override(
+                              style: FlutterFlowTheme.of(context).bodyText1.override(
                                     fontFamily: 'Work Sans',
                                     color: Color(0xFF006491),
                                     fontSize: 15,
@@ -415,14 +393,11 @@ class _PizzasWidgetState extends State<PizzasWidget> {
                             ),
                           ),
                           Padding(
-                            padding:
-                                EdgeInsetsDirectional.fromSTEB(0, 0, 7, 15),
+                            padding: EdgeInsetsDirectional.fromSTEB(0, 0, 7, 15),
                             child: Text(
                               'La pizza con los sabores auténticos de nuestro país. Chorizo, carne molida, jalapeño, cebolla.',
                               textAlign: TextAlign.start,
-                              style: FlutterFlowTheme.of(context)
-                                  .bodyText2
-                                  .override(
+                              style: FlutterFlowTheme.of(context).bodyText2.override(
                                     fontFamily: 'Work Sans',
                                     color: Color(0xFF737373),
                                     fontSize: 11,
@@ -453,8 +428,8 @@ class _PizzasWidgetState extends State<PizzasWidget> {
                                 ),
                               );
                             },
-                            child: Image.network(
-                              'https://github.com/LeslieGaytan/Poyecto-Ulll-Imagenes/blob/main/PES.png?raw=true',
+                            child: Image.asset(
+                              'assets/images/PES.png',
                               width: 170,
                               height: 100,
                               fit: BoxFit.cover,
@@ -464,9 +439,7 @@ class _PizzasWidgetState extends State<PizzasWidget> {
                             padding: EdgeInsetsDirectional.fromSTEB(0, 5, 0, 0),
                             child: Text(
                               'PEPPERONI ESPECIAL',
-                              style: FlutterFlowTheme.of(context)
-                                  .bodyText1
-                                  .override(
+                              style: FlutterFlowTheme.of(context).bodyText1.override(
                                     fontFamily: 'Work Sans',
                                     color: Color(0xFF006491),
                                     fontSize: 15,
@@ -474,13 +447,10 @@ class _PizzasWidgetState extends State<PizzasWidget> {
                             ),
                           ),
                           Padding(
-                            padding:
-                                EdgeInsetsDirectional.fromSTEB(0, 0, 0, 15),
+                            padding: EdgeInsetsDirectional.fromSTEB(0, 0, 0, 15),
                             child: Text(
                               'La combinación perfecta entre Pepperoni y Champiñones, con un gran sabor y horneado al momento.',
-                              style: FlutterFlowTheme.of(context)
-                                  .bodyText2
-                                  .override(
+                              style: FlutterFlowTheme.of(context).bodyText2.override(
                                     fontFamily: 'Work Sans',
                                     color: Color(0xFF737373),
                                     fontSize: 11,

@@ -136,8 +136,8 @@ class _ComentWidgetState extends State<ComentWidget> {
                         decoration: BoxDecoration(
                           shape: BoxShape.circle,
                         ),
-                        child: Image.network(
-                          'https://github.com/LeslieGaytan/Poyecto-Ulll-Imagenes/blob/main/p1.png?raw=true',
+                        child: Image.asset(
+                          'assets/images/p1.png',
                           fit: BoxFit.fitHeight,
                         ),
                       ),
@@ -151,8 +151,8 @@ class _ComentWidgetState extends State<ComentWidget> {
                         decoration: BoxDecoration(
                           shape: BoxShape.circle,
                         ),
-                        child: Image.network(
-                          'https://raw.githubusercontent.com/LeslieGaytan/Flutter-mis-imagenes/main/images.png',
+                        child: Image.asset(
+                          'assets/images/images.png',
                         ),
                       ),
                     ),
@@ -165,8 +165,8 @@ class _ComentWidgetState extends State<ComentWidget> {
                         decoration: BoxDecoration(
                           shape: BoxShape.circle,
                         ),
-                        child: Image.network(
-                          'https://raw.githubusercontent.com/LeslieGaytan/Flutter-mis-imagenes/main/57967b8930c1ce7f5269370bb3faea67.jpg',
+                        child: Image.asset(
+                          'assets/images/57967b8930c1ce7f5269370bb3faea67.jpg',
                         ),
                       ),
                     ),
@@ -184,21 +184,19 @@ class _ComentWidgetState extends State<ComentWidget> {
                       children: [
                         Text(
                           'Muy satisfecho',
-                          style:
-                              FlutterFlowTheme.of(context).subtitle1.override(
-                                    fontFamily: 'Poppins',
-                                    color: Color(0xFF006491),
-                                    fontSize: 16,
-                                  ),
+                          style: FlutterFlowTheme.of(context).subtitle1.override(
+                                fontFamily: 'Poppins',
+                                color: Color(0xFF006491),
+                                fontSize: 16,
+                              ),
                         ),
                         Text(
                           '59%',
-                          style:
-                              FlutterFlowTheme.of(context).subtitle1.override(
-                                    fontFamily: 'Poppins',
-                                    color: Color(0xFF006491),
-                                    fontSize: 15,
-                                  ),
+                          style: FlutterFlowTheme.of(context).subtitle1.override(
+                                fontFamily: 'Poppins',
+                                color: Color(0xFF006491),
+                                fontSize: 15,
+                              ),
                         ),
                         Icon(
                           Icons.star_outlined,
@@ -212,21 +210,19 @@ class _ComentWidgetState extends State<ComentWidget> {
                       children: [
                         Text(
                           'Satisfecho',
-                          style:
-                              FlutterFlowTheme.of(context).subtitle1.override(
-                                    fontFamily: 'Poppins',
-                                    color: Color(0xFF006491),
-                                    fontSize: 16,
-                                  ),
+                          style: FlutterFlowTheme.of(context).subtitle1.override(
+                                fontFamily: 'Poppins',
+                                color: Color(0xFF006491),
+                                fontSize: 16,
+                              ),
                         ),
                         Text(
                           '32%',
-                          style:
-                              FlutterFlowTheme.of(context).subtitle1.override(
-                                    fontFamily: 'Poppins',
-                                    color: Color(0xFF006491),
-                                    fontSize: 15,
-                                  ),
+                          style: FlutterFlowTheme.of(context).subtitle1.override(
+                                fontFamily: 'Poppins',
+                                color: Color(0xFF006491),
+                                fontSize: 15,
+                              ),
                         ),
                         Icon(
                           Icons.star_half_rounded,
@@ -240,21 +236,19 @@ class _ComentWidgetState extends State<ComentWidget> {
                       children: [
                         Text(
                           'Insatisfecho',
-                          style:
-                              FlutterFlowTheme.of(context).subtitle1.override(
-                                    fontFamily: 'Poppins',
-                                    color: Color(0xFF006491),
-                                    fontSize: 16,
-                                  ),
+                          style: FlutterFlowTheme.of(context).subtitle1.override(
+                                fontFamily: 'Poppins',
+                                color: Color(0xFF006491),
+                                fontSize: 16,
+                              ),
                         ),
                         Text(
                           '9%',
-                          style:
-                              FlutterFlowTheme.of(context).subtitle1.override(
-                                    fontFamily: 'Poppins',
-                                    color: Color(0xFF006491),
-                                    fontSize: 15,
-                                  ),
+                          style: FlutterFlowTheme.of(context).subtitle1.override(
+                                fontFamily: 'Poppins',
+                                color: Color(0xFF006491),
+                                fontSize: 15,
+                              ),
                         ),
                         Icon(
                           Icons.star_border,

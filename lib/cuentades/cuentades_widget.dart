@@ -126,8 +126,8 @@ class _CuentadesWidgetState extends State<CuentadesWidget> {
                     decoration: BoxDecoration(
                       shape: BoxShape.circle,
                     ),
-                    child: Image.network(
-                      'https://github.com/LeslieGaytan/Poyecto-Ulll-Imagenes/blob/main/me.jpg?raw=true',
+                    child: Image.asset(
+                      'assets/images/me.jpg',
                       fit: BoxFit.fitWidth,
                     ),
                   ),

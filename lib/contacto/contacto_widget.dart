@@ -121,8 +121,7 @@ class _ContactoWidgetState extends State<ContactoWidget> {
                       padding: EdgeInsetsDirectional.fromSTEB(20, 0, 0, 0),
                       child: InkWell(
                         onTap: () async {
-                          await launchURL(
-                              'https://www.facebook.com/DominosMexico');
+                          await launchURL('https://www.facebook.com/DominosMexico');
                         },
                         child: FaIcon(
                           FontAwesomeIcons.facebookF,
@@ -135,8 +134,7 @@ class _ContactoWidgetState extends State<ContactoWidget> {
                       padding: EdgeInsetsDirectional.fromSTEB(20, 0, 0, 0),
                       child: InkWell(
                         onTap: () async {
-                          await launchURL(
-                              'https://www.instagram.com/dominosmexico/');
+                          await launchURL('https://www.instagram.com/dominosmexico/');
                         },
                         child: FaIcon(
                           FontAwesomeIcons.instagram,
@@ -162,8 +160,7 @@ class _ContactoWidgetState extends State<ContactoWidget> {
                       padding: EdgeInsetsDirectional.fromSTEB(20, 0, 0, 0),
                       child: InkWell(
                         onTap: () async {
-                          await launchURL(
-                              'https://www.youtube.com/user/DominosPizzaMx');
+                          await launchURL('https://www.youtube.com/user/DominosPizzaMx');
                         },
                         child: FaIcon(
                           FontAwesomeIcons.youtube,
@@ -212,8 +209,8 @@ class _ContactoWidgetState extends State<ContactoWidget> {
                   decoration: BoxDecoration(
                     color: Color(0xFFEEEEEE),
                   ),
-                  child: Image.network(
-                    'https://github.com/LeslieGaytan/Poyecto-Ulll-Imagenes/blob/main/mapa.JPG?raw=true',
+                  child: Image.asset(
+                    'assets/images/mapa.JPG',
                     width: 100,
                     height: 100,
                     fit: BoxFit.fitHeight,

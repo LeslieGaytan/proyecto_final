@@ -127,12 +127,11 @@ class _PedidoWidgetState extends State<PedidoWidget> {
                       children: [
                         Text(
                           'Recoge su orden',
-                          style:
-                              FlutterFlowTheme.of(context).bodyText1.override(
-                                    fontFamily: 'Poppins',
-                                    color: Color(0xFF404041),
-                                    fontSize: 15,
-                                  ),
+                          style: FlutterFlowTheme.of(context).bodyText1.override(
+                                fontFamily: 'Poppins',
+                                color: Color(0xFF404041),
+                                fontSize: 15,
+                              ),
                         ),
                         FFButtonWidget(
                           onPressed: () async {
@@ -151,11 +150,10 @@ class _PedidoWidgetState extends State<PedidoWidget> {
                             width: 140,
                             height: 40,
                             color: Color(0xFF006391),
-                            textStyle:
-                                FlutterFlowTheme.of(context).subtitle2.override(
-                                      fontFamily: 'Poppins',
-                                      color: Colors.white,
-                                    ),
+                            textStyle: FlutterFlowTheme.of(context).subtitle2.override(
+                                  fontFamily: 'Poppins',
+                                  color: Colors.white,
+                                ),
                             borderSide: BorderSide(
                               color: Colors.transparent,
                               width: 1,
@@ -167,7 +165,7 @@ class _PedidoWidgetState extends State<PedidoWidget> {
                     ),
                     Padding(
                       padding: EdgeInsetsDirectional.fromSTEB(15, 0, 0, 0),
-                      child: SvgPicture.network(
+                      child: SvgPicture.asset(
                         'https://www.dominos.com.mx/images/news/icon-carryout_blue.svg',
                         width: 140,
                         height: 100,
@@ -189,12 +187,11 @@ class _PedidoWidgetState extends State<PedidoWidget> {
                       children: [
                         Text(
                           'Llevamos su orden',
-                          style:
-                              FlutterFlowTheme.of(context).bodyText1.override(
-                                    fontFamily: 'Poppins',
-                                    color: Color(0xFF404041),
-                                    fontSize: 15,
-                                  ),
+                          style: FlutterFlowTheme.of(context).bodyText1.override(
+                                fontFamily: 'Poppins',
+                                color: Color(0xFF404041),
+                                fontSize: 15,
+                              ),
                         ),
                         FFButtonWidget(
                           onPressed: () async {
@@ -213,11 +210,10 @@ class _PedidoWidgetState extends State<PedidoWidget> {
                             width: 140,
                             height: 40,
                             color: Color(0xFFE41937),
-                            textStyle:
-                                FlutterFlowTheme.of(context).subtitle2.override(
-                                      fontFamily: 'Poppins',
-                                      color: Colors.white,
-                                    ),
+                            textStyle: FlutterFlowTheme.of(context).subtitle2.override(
+                                  fontFamily: 'Poppins',
+                                  color: Colors.white,
+                                ),
                             borderSide: BorderSide(
                               color: Colors.transparent,
                               width: 1,
@@ -229,8 +225,8 @@ class _PedidoWidgetState extends State<PedidoWidget> {
                     ),
                     Padding(
                       padding: EdgeInsetsDirectional.fromSTEB(15, 0, 0, 0),
-                      child: Image.network(
-                        'https://github.com/LeslieGaytan/Poyecto-Ulll-Imagenes/blob/main/moto.png?raw=true',
+                      child: Image.asset(
+                        'assets/images/moto.png',
                         width: 140,
                         height: 100,
                         fit: BoxFit.fitWidth,

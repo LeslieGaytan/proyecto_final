@@ -125,8 +125,8 @@ class _Cuenta2WidgetState extends State<Cuenta2Widget> {
                     decoration: BoxDecoration(
                       shape: BoxShape.circle,
                     ),
-                    child: Image.network(
-                      'https://github.com/LeslieGaytan/Poyecto-Ulll-Imagenes/blob/main/p2.png?raw=true',
+                    child: Image.asset(
+                      'assets/images/p2.png',
                       fit: BoxFit.fitWidth,
                     ),
                   ),

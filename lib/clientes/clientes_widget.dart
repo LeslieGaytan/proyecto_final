@@ -117,8 +117,8 @@ class _ClientesWidgetState extends State<ClientesWidget> {
                   padding: EdgeInsets.zero,
                   scrollDirection: Axis.vertical,
                   children: [
-                    Image.network(
-                      'https://github.com/LeslieGaytan/Poyecto-Ulll-Imagenes/blob/main/tarjeta.JPG?raw=true',
+                    Image.asset(
+                      'assets/images/tarjeta.JPG',
                       width: 100,
                       height: 190,
                       fit: BoxFit.fitHeight,
@@ -132,19 +132,16 @@ class _ClientesWidgetState extends State<ClientesWidget> {
                         ),
                         title: Text(
                           'Promociones mensuales exclusivas',
-                          style:
-                              FlutterFlowTheme.of(context).subtitle1.override(
-                                    fontFamily: 'Roboto',
-                                    color: FlutterFlowTheme.of(context)
-                                        .primaryBackground,
-                                    fontSize: 17,
-                                    fontWeight: FontWeight.w500,
-                                  ),
+                          style: FlutterFlowTheme.of(context).subtitle1.override(
+                                fontFamily: 'Roboto',
+                                color: FlutterFlowTheme.of(context).primaryBackground,
+                                fontSize: 17,
+                                fontWeight: FontWeight.w500,
+                              ),
                         ),
                         tileColor: Color(0xFFE41937),
                         dense: false,
-                        contentPadding:
-                            EdgeInsetsDirectional.fromSTEB(10, 0, 0, 0),
+                        contentPadding: EdgeInsetsDirectional.fromSTEB(10, 0, 0, 0),
                         shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(5),
                         ),
@@ -159,19 +156,16 @@ class _ClientesWidgetState extends State<ClientesWidget> {
                         ),
                         title: Text(
                           'Regalo de cumpleaños',
-                          style:
-                              FlutterFlowTheme.of(context).subtitle1.override(
-                                    fontFamily: 'Roboto',
-                                    color: FlutterFlowTheme.of(context)
-                                        .primaryBackground,
-                                    fontSize: 17,
-                                    fontWeight: FontWeight.w500,
-                                  ),
+                          style: FlutterFlowTheme.of(context).subtitle1.override(
+                                fontFamily: 'Roboto',
+                                color: FlutterFlowTheme.of(context).primaryBackground,
+                                fontSize: 17,
+                                fontWeight: FontWeight.w500,
+                              ),
                         ),
                         tileColor: Color(0xFFE41937),
                         dense: false,
-                        contentPadding:
-                            EdgeInsetsDirectional.fromSTEB(10, 0, 0, 0),
+                        contentPadding: EdgeInsetsDirectional.fromSTEB(10, 0, 0, 0),
                         shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(5),
                         ),
@@ -186,19 +180,16 @@ class _ClientesWidgetState extends State<ClientesWidget> {
                         ),
                         title: Text(
                           '1 pizza a tu eleccion gratis cada mes',
-                          style:
-                              FlutterFlowTheme.of(context).subtitle1.override(
-                                    fontFamily: 'Roboto',
-                                    color: FlutterFlowTheme.of(context)
-                                        .primaryBackground,
-                                    fontSize: 17,
-                                    fontWeight: FontWeight.w500,
-                                  ),
+                          style: FlutterFlowTheme.of(context).subtitle1.override(
+                                fontFamily: 'Roboto',
+                                color: FlutterFlowTheme.of(context).primaryBackground,
+                                fontSize: 17,
+                                fontWeight: FontWeight.w500,
+                              ),
                         ),
                         tileColor: Color(0xFFE41937),
                         dense: false,
-                        contentPadding:
-                            EdgeInsetsDirectional.fromSTEB(10, 0, 0, 0),
+                        contentPadding: EdgeInsetsDirectional.fromSTEB(10, 0, 0, 0),
                         shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(5),
                         ),
@@ -213,19 +204,16 @@ class _ClientesWidgetState extends State<ClientesWidget> {
                         ),
                         title: Text(
                           '10% de descuento en todas tus compras',
-                          style:
-                              FlutterFlowTheme.of(context).subtitle1.override(
-                                    fontFamily: 'Roboto',
-                                    color: FlutterFlowTheme.of(context)
-                                        .primaryBackground,
-                                    fontSize: 17,
-                                    fontWeight: FontWeight.w500,
-                                  ),
+                          style: FlutterFlowTheme.of(context).subtitle1.override(
+                                fontFamily: 'Roboto',
+                                color: FlutterFlowTheme.of(context).primaryBackground,
+                                fontSize: 17,
+                                fontWeight: FontWeight.w500,
+                              ),
                         ),
                         tileColor: Color(0xFFE41937),
                         dense: false,
-                        contentPadding:
-                            EdgeInsetsDirectional.fromSTEB(10, 0, 0, 0),
+                        contentPadding: EdgeInsetsDirectional.fromSTEB(10, 0, 0, 0),
                         shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(5),
                         ),
@@ -240,19 +228,16 @@ class _ClientesWidgetState extends State<ClientesWidget> {
                         ),
                         title: Text(
                           'Costo \$700',
-                          style:
-                              FlutterFlowTheme.of(context).subtitle1.override(
-                                    fontFamily: 'Roboto',
-                                    color: FlutterFlowTheme.of(context)
-                                        .primaryBackground,
-                                    fontSize: 17,
-                                    fontWeight: FontWeight.w500,
-                                  ),
+                          style: FlutterFlowTheme.of(context).subtitle1.override(
+                                fontFamily: 'Roboto',
+                                color: FlutterFlowTheme.of(context).primaryBackground,
+                                fontSize: 17,
+                                fontWeight: FontWeight.w500,
+                              ),
                         ),
                         tileColor: Color(0xFFE41937),
                         dense: false,
-                        contentPadding:
-                            EdgeInsetsDirectional.fromSTEB(10, 0, 0, 0),
+                        contentPadding: EdgeInsetsDirectional.fromSTEB(10, 0, 0, 0),
                         shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(5),
                         ),
@@ -277,11 +262,10 @@ class _ClientesWidgetState extends State<ClientesWidget> {
                           width: 220,
                           height: 40,
                           color: Color(0xFF006491),
-                          textStyle:
-                              FlutterFlowTheme.of(context).subtitle2.override(
-                                    fontFamily: 'Work Sans',
-                                    color: Colors.white,
-                                  ),
+                          textStyle: FlutterFlowTheme.of(context).subtitle2.override(
+                                fontFamily: 'Work Sans',
+                                color: Colors.white,
+                              ),
                           borderSide: BorderSide(
                             color: Colors.transparent,
                             width: 1,

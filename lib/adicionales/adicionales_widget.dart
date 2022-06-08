@@ -33,7 +33,7 @@ class _AdicionalesWidgetState extends State<AdicionalesWidget> {
             Padding(
               padding: EdgeInsetsDirectional.fromSTEB(0, 0, 0, 5),
               child: Image.asset(
-                'assets/images/descarga_(1).png',
+                'assets/images/descarga__1_-removebg-preview.png',
                 width: 50,
                 height: 50,
                 fit: BoxFit.cover,
@@ -144,8 +144,8 @@ class _AdicionalesWidgetState extends State<AdicionalesWidget> {
                             },
                             child: ClipRRect(
                               borderRadius: BorderRadius.circular(5),
-                              child: Image.network(
-                                'https://github.com/LeslieGaytan/Poyecto-Ulll-Imagenes/blob/main/BONEHAB.png?raw=true',
+                              child: Image.asset(
+                                'assets/images/BONEHAB.png',
                                 width: 170,
                                 height: 100,
                                 fit: BoxFit.cover,
@@ -156,9 +156,7 @@ class _AdicionalesWidgetState extends State<AdicionalesWidget> {
                             padding: EdgeInsetsDirectional.fromSTEB(0, 5, 0, 0),
                             child: Text(
                               'Bonelees 300g',
-                              style: FlutterFlowTheme.of(context)
-                                  .bodyText1
-                                  .override(
+                              style: FlutterFlowTheme.of(context).bodyText1.override(
                                     fontFamily: 'Work Sans',
                                     color: Color(0xFF006491),
                                     fontSize: 15,
@@ -191,8 +189,8 @@ class _AdicionalesWidgetState extends State<AdicionalesWidget> {
                             },
                             child: ClipRRect(
                               borderRadius: BorderRadius.circular(5),
-                              child: Image.network(
-                                'https://github.com/LeslieGaytan/Poyecto-Ulll-Imagenes/blob/main/WINGSBBQ.png?raw=true',
+                              child: Image.asset(
+                                'assets/images/WINGSBBQ.png',
                                 width: 170,
                                 height: 100,
                                 fit: BoxFit.cover,
@@ -203,9 +201,7 @@ class _AdicionalesWidgetState extends State<AdicionalesWidget> {
                             padding: EdgeInsetsDirectional.fromSTEB(0, 5, 0, 0),
                             child: Text(
                               'ALITAS 300g',
-                              style: FlutterFlowTheme.of(context)
-                                  .bodyText1
-                                  .override(
+                              style: FlutterFlowTheme.of(context).bodyText1.override(
                                     fontFamily: 'Work Sans',
                                     color: Color(0xFF006491),
                                     fontSize: 15,
@@ -247,8 +243,8 @@ class _AdicionalesWidgetState extends State<AdicionalesWidget> {
                             },
                             child: ClipRRect(
                               borderRadius: BorderRadius.circular(5),
-                              child: Image.network(
-                                'https://github.com/LeslieGaytan/Poyecto-Ulll-Imagenes/blob/main/CANEBITE.png?raw=true',
+                              child: Image.asset(
+                                'assets/images/CANEBITE.png',
                                 width: 170,
                                 height: 100,
                                 fit: BoxFit.cover,
@@ -259,9 +255,7 @@ class _AdicionalesWidgetState extends State<AdicionalesWidget> {
                             padding: EdgeInsetsDirectional.fromSTEB(0, 5, 0, 0),
                             child: Text(
                               'CANELA BAITZ',
-                              style: FlutterFlowTheme.of(context)
-                                  .bodyText1
-                                  .override(
+                              style: FlutterFlowTheme.of(context).bodyText1.override(
                                     fontFamily: 'Work Sans',
                                     color: Color(0xFF006491),
                                     fontSize: 15,
@@ -299,8 +293,8 @@ class _AdicionalesWidgetState extends State<AdicionalesWidget> {
                                 topLeft: Radius.circular(0),
                                 topRight: Radius.circular(5),
                               ),
-                              child: Image.network(
-                                'https://github.com/LeslieGaytan/Poyecto-Ulll-Imagenes/blob/main/PAPOT.png?raw=true',
+                              child: Image.asset(
+                                'assets/images/PAPOT.png',
                                 width: 170,
                                 height: 100,
                                 fit: BoxFit.cover,
@@ -311,9 +305,7 @@ class _AdicionalesWidgetState extends State<AdicionalesWidget> {
                             padding: EdgeInsetsDirectional.fromSTEB(0, 5, 0, 0),
                             child: Text(
                               'PAPOTAS',
-                              style: FlutterFlowTheme.of(context)
-                                  .bodyText1
-                                  .override(
+                              style: FlutterFlowTheme.of(context).bodyText1.override(
                                     fontFamily: 'Work Sans',
                                     color: Color(0xFF006491),
                                     fontSize: 15,
@@ -355,8 +347,8 @@ class _AdicionalesWidgetState extends State<AdicionalesWidget> {
                             },
                             child: ClipRRect(
                               borderRadius: BorderRadius.circular(5),
-                              child: Image.network(
-                                'https://github.com/LeslieGaytan/Poyecto-Ulll-Imagenes/blob/main/FCHEESB.png?raw=true',
+                              child: Image.asset(
+                                'assets/images/FCHEESB.png',
                                 width: 170,
                                 height: 100,
                                 fit: BoxFit.cover,
@@ -367,9 +359,7 @@ class _AdicionalesWidgetState extends State<AdicionalesWidget> {
                             padding: EdgeInsetsDirectional.fromSTEB(0, 5, 0, 0),
                             child: Text(
                               'CHEESY BREAD',
-                              style: FlutterFlowTheme.of(context)
-                                  .bodyText1
-                                  .override(
+                              style: FlutterFlowTheme.of(context).bodyText1.override(
                                     fontFamily: 'Work Sans',
                                     color: Color(0xFF006491),
                                     fontSize: 15,
@@ -400,8 +390,8 @@ class _AdicionalesWidgetState extends State<AdicionalesWidget> {
                                 ),
                               );
                             },
-                            child: Image.network(
-                              'https://github.com/LeslieGaytan/Poyecto-Ulll-Imagenes/blob/main/CUPMARIN.png?raw=true',
+                            child: Image.asset(
+                              'assets/images/CUPMARIN.png',
                               width: 170,
                               height: 100,
                               fit: BoxFit.cover,
@@ -411,9 +401,7 @@ class _AdicionalesWidgetState extends State<AdicionalesWidget> {
                             padding: EdgeInsetsDirectional.fromSTEB(0, 5, 0, 0),
                             child: Text(
                               'SALSA MARINARA',
-                              style: FlutterFlowTheme.of(context)
-                                  .bodyText1
-                                  .override(
+                              style: FlutterFlowTheme.of(context).bodyText1.override(
                                     fontFamily: 'Work Sans',
                                     color: Color(0xFF006491),
                                     fontSize: 15,
@@ -455,8 +443,8 @@ class _AdicionalesWidgetState extends State<AdicionalesWidget> {
                             },
                             child: ClipRRect(
                               borderRadius: BorderRadius.circular(5),
-                              child: Image.network(
-                                'https://github.com/LeslieGaytan/Poyecto-Ulll-Imagenes/blob/main/FPEPSI.png?raw=true',
+                              child: Image.asset(
+                                'assets/images/FPEPSI.png',
                                 width: 170,
                                 height: 100,
                                 fit: BoxFit.cover,
@@ -467,9 +455,7 @@ class _AdicionalesWidgetState extends State<AdicionalesWidget> {
                             padding: EdgeInsetsDirectional.fromSTEB(0, 5, 0, 0),
                             child: Text(
                               'PEPSI',
-                              style: FlutterFlowTheme.of(context)
-                                  .bodyText1
-                                  .override(
+                              style: FlutterFlowTheme.of(context).bodyText1.override(
                                     fontFamily: 'Work Sans',
                                     color: Color(0xFF006491),
                                     fontSize: 15,
@@ -502,8 +488,8 @@ class _AdicionalesWidgetState extends State<AdicionalesWidget> {
                             },
                             child: ClipRRect(
                               borderRadius: BorderRadius.circular(5),
-                              child: Image.network(
-                                'https://github.com/LeslieGaytan/Poyecto-Ulll-Imagenes/blob/main/FP7UP.png?raw=true',
+                              child: Image.asset(
+                                'assets/images/FP7UP.png',
                                 width: 170,
                                 height: 100,
                                 fit: BoxFit.cover,
@@ -514,9 +500,7 @@ class _AdicionalesWidgetState extends State<AdicionalesWidget> {
                             padding: EdgeInsetsDirectional.fromSTEB(0, 5, 0, 0),
                             child: Text(
                               '7UP',
-                              style: FlutterFlowTheme.of(context)
-                                  .bodyText1
-                                  .override(
+                              style: FlutterFlowTheme.of(context).bodyText1.override(
                                     fontFamily: 'Work Sans',
                                     color: Color(0xFF006491),
                                     fontSize: 15,

@@ -132,8 +132,8 @@ class _MainWidgetState extends State<MainWidget> {
                       },
                       child: ClipRRect(
                         borderRadius: BorderRadius.circular(5),
-                        child: Image.network(
-                          'https://github.com/LeslieGaytan/Poyecto-Ulll-Imagenes/blob/main/promo.png?raw=true',
+                        child: Image.asset(
+                          'assets/images/promo.png',
                           width: MediaQuery.of(context).size.width * 0.45,
                           height: 100,
                           fit: BoxFit.fitWidth,
@@ -151,22 +151,17 @@ class _MainWidgetState extends State<MainWidget> {
                           children: [
                             Text(
                               'COMBO PREMIUM',
-                              style: FlutterFlowTheme.of(context)
-                                  .bodyText1
-                                  .override(
+                              style: FlutterFlowTheme.of(context).bodyText1.override(
                                     fontFamily: 'Poppins',
                                     color: Color(0xFFE41937),
                                     fontSize: 13,
                                   ),
                             ),
                             Padding(
-                              padding:
-                                  EdgeInsetsDirectional.fromSTEB(0, 3, 0, 0),
+                              padding: EdgeInsetsDirectional.fromSTEB(0, 3, 0, 0),
                               child: Text(
                                 'Premium 1 ingrediente (Sartén grande, \nOrilla Rellena de Queso grande, \nCrunchy grande e Italiana extragrande)+ \nadicional (papotas, canela, cajeta baitz) \npor \$249',
-                                style: FlutterFlowTheme.of(context)
-                                    .bodyText1
-                                    .override(
+                                style: FlutterFlowTheme.of(context).bodyText1.override(
                                       fontFamily: 'Poppins',
                                       color: Color(0xFF5C6873),
                                       fontSize: 9,
@@ -200,8 +195,8 @@ class _MainWidgetState extends State<MainWidget> {
                       },
                       child: ClipRRect(
                         borderRadius: BorderRadius.circular(5),
-                        child: Image.network(
-                          'https://github.com/LeslieGaytan/Poyecto-Ulll-Imagenes/blob/main/promo6.png?raw=true',
+                        child: Image.asset(
+                          'assets/images/promo6.png',
                           width: MediaQuery.of(context).size.width * 0.45,
                           height: 100,
                           fit: BoxFit.fitWidth,
@@ -219,22 +214,17 @@ class _MainWidgetState extends State<MainWidget> {
                           children: [
                             Text(
                               'COMBO GRANDE',
-                              style: FlutterFlowTheme.of(context)
-                                  .bodyText1
-                                  .override(
+                              style: FlutterFlowTheme.of(context).bodyText1.override(
                                     fontFamily: 'Poppins',
                                     color: Color(0xFFE41937),
                                     fontSize: 13,
                                   ),
                             ),
                             Padding(
-                              padding:
-                                  EdgeInsetsDirectional.fromSTEB(0, 3, 0, 0),
+                              padding: EdgeInsetsDirectional.fromSTEB(0, 3, 0, 0),
                               child: Text(
                                 'Grande original 1 ingrediente + adicional \n(papotas, canela, cajeta baitz) por \$199',
-                                style: FlutterFlowTheme.of(context)
-                                    .bodyText1
-                                    .override(
+                                style: FlutterFlowTheme.of(context).bodyText1.override(
                                       fontFamily: 'Poppins',
                                       color: Color(0xFF5C6873),
                                       fontSize: 9,
@@ -268,8 +258,8 @@ class _MainWidgetState extends State<MainWidget> {
                       },
                       child: ClipRRect(
                         borderRadius: BorderRadius.circular(5),
-                        child: Image.network(
-                          'https://github.com/LeslieGaytan/Poyecto-Ulll-Imagenes/blob/main/promo3.png?raw=true',
+                        child: Image.asset(
+                          'assets/images/promo3.png',
                           width: MediaQuery.of(context).size.width * 0.45,
                           height: 100,
                           fit: BoxFit.fitWidth,
@@ -287,22 +277,17 @@ class _MainWidgetState extends State<MainWidget> {
                           children: [
                             Text(
                               'COMBO MEDIANA',
-                              style: FlutterFlowTheme.of(context)
-                                  .bodyText1
-                                  .override(
+                              style: FlutterFlowTheme.of(context).bodyText1.override(
                                     fontFamily: 'Poppins',
                                     color: Color(0xFFE41937),
                                     fontSize: 13,
                                   ),
                             ),
                             Padding(
-                              padding:
-                                  EdgeInsetsDirectional.fromSTEB(0, 3, 0, 0),
+                              padding: EdgeInsetsDirectional.fromSTEB(0, 3, 0, 0),
                               child: Text(
                                 'Mediana original 1 ingrediente + \nadicional (papotas, canela, cajeta\n baitz) por \$159',
-                                style: FlutterFlowTheme.of(context)
-                                    .bodyText1
-                                    .override(
+                                style: FlutterFlowTheme.of(context).bodyText1.override(
                                       fontFamily: 'Poppins',
                                       color: Color(0xFF5C6873),
                                       fontSize: 9,
@@ -336,8 +321,8 @@ class _MainWidgetState extends State<MainWidget> {
                       },
                       child: ClipRRect(
                         borderRadius: BorderRadius.circular(5),
-                        child: Image.network(
-                          'https://github.com/LeslieGaytan/Poyecto-Ulll-Imagenes/blob/main/promo7.png?raw=true',
+                        child: Image.asset(
+                          'assets/images/promo7.png',
                           width: MediaQuery.of(context).size.width * 0.45,
                           height: 100,
                           fit: BoxFit.fitWidth,
@@ -355,22 +340,17 @@ class _MainWidgetState extends State<MainWidget> {
                           children: [
                             Text(
                               '2 PIZZAS X \$298',
-                              style: FlutterFlowTheme.of(context)
-                                  .bodyText1
-                                  .override(
+                              style: FlutterFlowTheme.of(context).bodyText1.override(
                                     fontFamily: 'Poppins',
                                     color: Color(0xFFE41937),
                                     fontSize: 13,
                                   ),
                             ),
                             Padding(
-                              padding:
-                                  EdgeInsetsDirectional.fromSTEB(0, 3, 0, 0),
+                              padding: EdgeInsetsDirectional.fromSTEB(0, 3, 0, 0),
                               child: Text(
                                 '2x298 en Especialidades de 1 a 4 \nIngredientes.',
-                                style: FlutterFlowTheme.of(context)
-                                    .bodyText1
-                                    .override(
+                                style: FlutterFlowTheme.of(context).bodyText1.override(
                                       fontFamily: 'Poppins',
                                       color: Color(0xFF5C6873),
                                       fontSize: 9,
@@ -404,8 +384,8 @@ class _MainWidgetState extends State<MainWidget> {
                       },
                       child: ClipRRect(
                         borderRadius: BorderRadius.circular(5),
-                        child: Image.network(
-                          'https://github.com/LeslieGaytan/Poyecto-Ulll-Imagenes/blob/main/promo8.png?raw=true',
+                        child: Image.asset(
+                          'assets/images/promo8.png',
                           width: MediaQuery.of(context).size.width * 0.45,
                           height: 100,
                           fit: BoxFit.fitWidth,
@@ -423,22 +403,17 @@ class _MainWidgetState extends State<MainWidget> {
                           children: [
                             Text(
                               'RELANZAMIENTO SARTÉN',
-                              style: FlutterFlowTheme.of(context)
-                                  .bodyText1
-                                  .override(
+                              style: FlutterFlowTheme.of(context).bodyText1.override(
                                     fontFamily: 'Poppins',
                                     color: Color(0xFFE41937),
                                     fontSize: 13,
                                   ),
                             ),
                             Padding(
-                              padding:
-                                  EdgeInsetsDirectional.fromSTEB(0, 3, 0, 0),
+                              padding: EdgeInsetsDirectional.fromSTEB(0, 3, 0, 0),
                               child: Text(
                                 'Pizza de Sartén grande 1 a 4\n ingredientes por \$199',
-                                style: FlutterFlowTheme.of(context)
-                                    .bodyText1
-                                    .override(
+                                style: FlutterFlowTheme.of(context).bodyText1.override(
                                       fontFamily: 'Poppins',
                                       color: Color(0xFF5C6873),
                                       fontSize: 9,

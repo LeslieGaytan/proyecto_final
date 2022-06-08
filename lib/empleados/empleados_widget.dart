@@ -119,8 +119,8 @@ class _EmpleadosWidgetState extends State<EmpleadosWidget> {
                 padding: EdgeInsetsDirectional.fromSTEB(0, 15, 0, 15),
                 child: ClipRRect(
                   borderRadius: BorderRadius.circular(5),
-                  child: Image.network(
-                    'https://github.com/LeslieGaytan/Poyecto-Ulll-Imagenes/blob/main/IMAGEN-1-Domino_s-Pizza.png?raw=true',
+                  child: Image.asset(
+                    'assets/images/IMAGEN-1-Domino_s-Pizza.png',
                     width: MediaQuery.of(context).size.width * 0.8,
                     height: 190,
                     fit: BoxFit.fitWidth,
@@ -141,19 +141,16 @@ class _EmpleadosWidgetState extends State<EmpleadosWidget> {
                         ),
                         title: Text(
                           '18 años en adelante',
-                          style:
-                              FlutterFlowTheme.of(context).subtitle1.override(
-                                    fontFamily: 'Roboto',
-                                    color: FlutterFlowTheme.of(context)
-                                        .primaryBackground,
-                                    fontSize: 17,
-                                    fontWeight: FontWeight.w500,
-                                  ),
+                          style: FlutterFlowTheme.of(context).subtitle1.override(
+                                fontFamily: 'Roboto',
+                                color: FlutterFlowTheme.of(context).primaryBackground,
+                                fontSize: 17,
+                                fontWeight: FontWeight.w500,
+                              ),
                         ),
                         tileColor: Color(0xFF006491),
                         dense: false,
-                        contentPadding:
-                            EdgeInsetsDirectional.fromSTEB(10, 0, 0, 0),
+                        contentPadding: EdgeInsetsDirectional.fromSTEB(10, 0, 0, 0),
                         shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(5),
                         ),
@@ -168,19 +165,16 @@ class _EmpleadosWidgetState extends State<EmpleadosWidget> {
                         ),
                         title: Text(
                           'Copia de INE',
-                          style:
-                              FlutterFlowTheme.of(context).subtitle1.override(
-                                    fontFamily: 'Roboto',
-                                    color: FlutterFlowTheme.of(context)
-                                        .primaryBackground,
-                                    fontSize: 17,
-                                    fontWeight: FontWeight.w500,
-                                  ),
+                          style: FlutterFlowTheme.of(context).subtitle1.override(
+                                fontFamily: 'Roboto',
+                                color: FlutterFlowTheme.of(context).primaryBackground,
+                                fontSize: 17,
+                                fontWeight: FontWeight.w500,
+                              ),
                         ),
                         tileColor: Color(0xFF006491),
                         dense: false,
-                        contentPadding:
-                            EdgeInsetsDirectional.fromSTEB(10, 0, 0, 0),
+                        contentPadding: EdgeInsetsDirectional.fromSTEB(10, 0, 0, 0),
                         shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(5),
                         ),
@@ -195,19 +189,16 @@ class _EmpleadosWidgetState extends State<EmpleadosWidget> {
                         ),
                         title: Text(
                           'Curp',
-                          style:
-                              FlutterFlowTheme.of(context).subtitle1.override(
-                                    fontFamily: 'Roboto',
-                                    color: FlutterFlowTheme.of(context)
-                                        .primaryBackground,
-                                    fontSize: 17,
-                                    fontWeight: FontWeight.w500,
-                                  ),
+                          style: FlutterFlowTheme.of(context).subtitle1.override(
+                                fontFamily: 'Roboto',
+                                color: FlutterFlowTheme.of(context).primaryBackground,
+                                fontSize: 17,
+                                fontWeight: FontWeight.w500,
+                              ),
                         ),
                         tileColor: Color(0xFF006491),
                         dense: false,
-                        contentPadding:
-                            EdgeInsetsDirectional.fromSTEB(10, 0, 0, 0),
+                        contentPadding: EdgeInsetsDirectional.fromSTEB(10, 0, 0, 0),
                         shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(5),
                         ),
@@ -222,19 +213,16 @@ class _EmpleadosWidgetState extends State<EmpleadosWidget> {
                         ),
                         title: Text(
                           'Documentos en caso de contratacion',
-                          style:
-                              FlutterFlowTheme.of(context).subtitle1.override(
-                                    fontFamily: 'Roboto',
-                                    color: FlutterFlowTheme.of(context)
-                                        .primaryBackground,
-                                    fontSize: 17,
-                                    fontWeight: FontWeight.w500,
-                                  ),
+                          style: FlutterFlowTheme.of(context).subtitle1.override(
+                                fontFamily: 'Roboto',
+                                color: FlutterFlowTheme.of(context).primaryBackground,
+                                fontSize: 17,
+                                fontWeight: FontWeight.w500,
+                              ),
                         ),
                         tileColor: Color(0xFF006491),
                         dense: false,
-                        contentPadding:
-                            EdgeInsetsDirectional.fromSTEB(10, 0, 0, 0),
+                        contentPadding: EdgeInsetsDirectional.fromSTEB(10, 0, 0, 0),
                         shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(5),
                         ),
@@ -259,11 +247,10 @@ class _EmpleadosWidgetState extends State<EmpleadosWidget> {
                           width: 220,
                           height: 40,
                           color: Color(0xFFE41937),
-                          textStyle:
-                              FlutterFlowTheme.of(context).subtitle2.override(
-                                    fontFamily: 'Work Sans',
-                                    color: Colors.white,
-                                  ),
+                          textStyle: FlutterFlowTheme.of(context).subtitle2.override(
+                                fontFamily: 'Work Sans',
+                                color: Colors.white,
+                              ),
                           borderSide: BorderSide(
                             color: Colors.transparent,
                             width: 1,
